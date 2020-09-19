@@ -1,6 +1,7 @@
-<<<<<<< HEAD
+
 *.iml
 .gradle
+.idea/
 /local.properties
 /.idea/caches
 /.idea/libraries
@@ -13,7 +14,7 @@
 /captures
 .externalNativeBuild
 .cxx
-=======
+
 # Built application files
 *.apk
 *.aar
@@ -99,4 +100,4 @@ lint/generated/
 lint/outputs/
 lint/tmp/
 # lint/reports/
->>>>>>> bd4bad11db7d156be88e5d04af92568c2c3be61d
+
