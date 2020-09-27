@@ -10,6 +10,19 @@ import org.junit.runner.RunWith;
 
 import static org.junit.Assert.*;
 
+import androidx.test.filters.MediumTest;
+
+
+import org.junit.Rule;
+
+import org.junit.runner.RunWith;
+import id.ac.ui.cs.mobileprogramming.helloworld.MainActivity;
+
+import static androidx.test.espresso.Espresso.onView;
+import static androidx.test.espresso.assertion.ViewAssertions.matches;
+import static androidx.test.espresso.matcher.ViewMatchers.isDisplayed;
+import static androidx.test.espresso.matcher.ViewMatchers.withText;
+
 /**
  * Instrumented test, which will execute on an Android device.
  *
@@ -23,4 +36,6 @@ public class ExampleInstrumentedTest {
         Context appContext = InstrumentationRegistry.getInstrumentation().getTargetContext();
         assertEquals("id.ac.ui.cs.mobileprogramming.helloworld", appContext.getPackageName());
     }
+
+
 }
