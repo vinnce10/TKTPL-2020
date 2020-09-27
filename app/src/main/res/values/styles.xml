@@ -8,11 +8,11 @@
         <item name="colorAccent">@color/colorAccent</item>
     </style>
 
-    <style name="TextAppearance.AppCompat.Widget.ActionBar.Title." parent="@android:style/TextAppearance">
-        
-        <item name="android:color">@color/title_color</item>
+<!--    <style name="TextAppearance.AppCompat.Widget.ActionBar.Title." parent="@android:style/TextAppearance">-->
+<!--        -->
+<!--        <item name="android:color"></item>-->
 
-    </style>
+<!--    </style>-->
 
 
 
