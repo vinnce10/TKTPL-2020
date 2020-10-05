@@ -8,10 +8,10 @@
     tools:context=".MainActivity">
 
     <Chronometer
-        android:id="@+id/chronometer"
+        android:id="@+id/timeChronometer"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:format="00:00:00"
+        android:format="00:00:00:00"
         android:textColor="@android:color/black"
         android:textSize="40sp"
         android:textStyle="bold"
@@ -25,7 +25,7 @@
 
 
     <Button
-        android:id="@+id/exitApp"
+        android:id="@+id/exitAppStopwatch"
         android:layout_width="129dp"
         android:layout_height="49dp"
 
@@ -60,7 +60,7 @@
 
     <ImageButton
 
-        android:id="@+id/bt_start"
+        android:id="@+id/bt_play"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:background="@android:color/transparent"
