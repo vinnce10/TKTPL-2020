@@ -7,6 +7,7 @@ import android.os.PersistableBundle;
 import android.view.View;
 import android.widget.Button;
 import android.widget.TextView;
+//init week 3
 public class StopWatchActivity extends AppCompatActivity {
 
     @Override
