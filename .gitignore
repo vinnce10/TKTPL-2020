@@ -94,6 +94,9 @@ fastlane/readme.md
 # Version control
 vcs.xml
 
+#app signed ky
+key/
+
 # lint
 lint/intermediates/
 lint/generated/
