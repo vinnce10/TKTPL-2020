@@ -14,7 +14,7 @@
         android:background="@drawable/text_style"
         android:text="Hello World!"
         android:textAlignment="center"
-        android:textColor="#8bd8bd"
+        android:textColor="@color/colorPrimary"
         android:textSize="30dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintHorizontal_bias="0.496"
