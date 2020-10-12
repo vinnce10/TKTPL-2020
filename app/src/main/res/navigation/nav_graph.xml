@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/rowOfPhonesFragment">
+
+    <fragment
+        android:id="@+id/rowOfPhonesFragment"
+        android:name="id.ac.ui.cs.mobileprogramming.helloworld.lab4.view.PhoneReviewFragment"
+        android:label="Apple Shop"
+        tools:layout="@layout/row_of_phones">
+        <action
+            android:id="@+id/action_rowOfPhonesFragment_to_phoneDetailFragment"
+            app:destination="@id/phoneDetailFragment"
+
+            />
+
+    </fragment>
+
+    <fragment
+        android:id="@+id/phoneDetailFragment"
+        android:name="id.ac.ui.cs.mobileprogramming.helloworld.lab4.view.PhoneReviewDetailFragment"
+        android:label="Product Detail"
+        tools:layout="@layout/phone_detail_fragment" />
+
+
+</navigation>

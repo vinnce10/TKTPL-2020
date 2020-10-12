@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <data>
+        <variable
+            name="phone"
+            type="id.ac.ui.cs.mobileprogramming.helloworld.lab4.model.Phone" />
+        <variable
+            name="fragmentInterface"
+            type="id.ac.ui.cs.mobileprogramming.helloworld.lab4.view.FragmentInterface" />
+
+
+    </data>
+
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="15dp"
+        android:id="@+id/parent_layout"
+        android:onClick="@{()-> fragmentInterface.itemOnClick()">
+
+        <ImageView
+
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:id="@+id/phoneImage"
+            android:src="@drawable/asus_rog_3"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Asus Rog Phone 3"
+            android:id="@+id/phoneName"
+            android:layout_toRightOf="@+id/phoneImage"
+            android:textColor="#000"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="30dp"
+            android:textSize="17sp"/>
+
+    </LinearLayout>
+
+
+</layout>

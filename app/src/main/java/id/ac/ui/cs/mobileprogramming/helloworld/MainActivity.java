@@ -14,7 +14,7 @@ import android.widget.TextView;
 public class MainActivity extends AppCompatActivity {
     public int numberOfClicks = 0;
     public TextView text;
-    public Button button, stopwatchButton, exitApp;
+    public Button button, stopwatchButton, exitApp, learnFragmentButton;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -23,6 +23,13 @@ public class MainActivity extends AppCompatActivity {
         button = (Button) findViewById(R.id.button1);
         stopwatchButton = (Button) findViewById(R.id.stopwatchButton);
         exitApp = (Button) findViewById(R.id.exitAppHome);
+        learnFragmentButton = (Button) findViewById(R.id.learnFragment);
+//        learnFragmentButton.setOnClickListener(new View.OnClickListener() {
+//            @Override
+//            public void onClick(View v) {
+//                handleLearnFragment(v);
+//            }
+//        });
         exitApp.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -47,6 +54,11 @@ public class MainActivity extends AppCompatActivity {
         });
     }
 
+//    public void handleLearnFragment( View view){
+//        Intent intent = new Intent(this, LearnFragmentActivity.class);
+//        this.startActivity(intent);
+//    }
+
     public void handleOnClick (View view){
         numberOfClicks++;
     }
@@ -65,12 +77,6 @@ public class MainActivity extends AppCompatActivity {
                 .setTitle("Exit App")
                 .setMessage("Please press the Exit App button to exit the App")
                 .setNeutralButton("OK",null).show();
-//                .setPositiveButton("YES", new DialogInterface.OnClickListener() {
-//                    @Override
-//                    public void onClick(DialogInterface dialog, int which) {
-//                        finish();
-//                    }
-//                })
-//                .setNegativeButton("NO",null).show();
+
         }
     }
